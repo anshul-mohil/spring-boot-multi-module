@@ -1,0 +1,36 @@
+server:
+  port: 18818
+
+logging.level.org.springframework.web: DEBUG
+logging.level.org.springframework.ws.client.MessageTracing.sent: DEBUG
+logging.level.org.springframework.ws.server.MessageTracing.sent: DEBUG
+logging.level.org.springframework.ws.client.MessageTracing.received: TRACE
+logging.level.org.springframework.ws.server.MessageTracing.received: TRACE
+
+cors.allow.origin: "*"
+
+spring:
+  #  jersey:
+  #   application-path: /api/v1
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    #    username : some_username
+    username: system
+    password: enquero
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    hikaric:
+      connection-timeout: 60000
+      maximum-pool-size: 5
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+    hibernate:
+      ddl-auto: update
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    org:
+      hibernate:
+        SQL: debug

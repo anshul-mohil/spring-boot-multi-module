@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.anshul.symantec.symBeta.controller.UserControllerInterface" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/controller/UserControllerInterface.java" binary="false" 
+    label="userControllerInterface" type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="61" y="0"/>    
+    <execution id="2">      
+      <position height="81" width="228" x="5" y="125"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="27" width="228" x="5" y="660"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="com.anshul.symantec.symBeta.controller.UserController" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/controller/UserController.java" binary="false" 
+    label="userController" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="352" y="0"/>    
+    <execution id="4">      
+      <position height="27" width="218" x="237" y="152"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="81" width="218" x="237" y="214"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="com.anshul.symantec.symBeta.service.UserService" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/service/UserService.java" binary="false" label="userService" 
+    type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="539" y="0"/>    
+    <execution id="9">      
+      <position height="27" width="204" x="459" y="241"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="81" width="204" x="459" y="332"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="com.anshul.symantec.symBeta.service.UserServiceImpl" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/service/UserServiceImpl.java" binary="false" 
+    label="userServiceImpl" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="782" y="0"/>    
+    <execution id="13">      
+      <position height="27" width="204" x="667" y="359"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="81" width="204" x="667" y="407"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="com.anshul.symantec.symBeta.repository.SymPBUsersRepository" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/repository/SymPBUsersRepository.java" binary="false" 
+    label="symPBUsersRepository" type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="993" y="0"/>    
+    <execution id="17">      
+      <position height="27" width="235" x="875" y="434"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="81" width="235" x="875" y="633"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="getUsers():org.springframework.http.ResponseEntity&lt;Object&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="8" operation="getUsers():org.springframework.http.ResponseEntity&lt;Object&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="12" operation="getUsers():org.springframework.http.ResponseEntity&lt;Object&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="16" operation="findAll():java.util.List&lt;T&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="20" operation="getUsers():org.springframework.http.ResponseEntity&lt;Object&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>
+</sequence-diagram>

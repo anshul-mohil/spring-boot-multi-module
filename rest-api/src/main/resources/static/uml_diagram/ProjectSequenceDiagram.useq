@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.anshul.symantec.symBeta.controller.ProjectControllerInterface" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/controller/ProjectControllerInterface.java" binary="false" 
+    label="projectControllerInterface" type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="77" y="0"/>    
+    <execution id="2">      
+      <position height="319" width="249" x="5" y="98"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="27" width="7" x="126" y="255"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="285" width="249" x="5" y="520"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="27" width="249" x="5" y="643"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="com.anshul.symantec.symBeta.controller.ProjectController" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/controller/ProjectController.java" binary="false" 
+    label="projectController" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="415" y="0"/>    
+    <execution id="4">      
+      <position height="265" width="218" x="258" y="125"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="231" width="218" x="258" y="547"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.anshul.symantec.symBeta.service.ProjectService" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/service/ProjectService.java" binary="false" label="projectService" 
+    type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="570" y="0"/>    
+    <execution id="12">      
+      <position height="211" width="204" x="480" y="152"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="204" width="204" x="480" y="547"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="com.anshul.symantec.symBeta.service.ProjectServiceImpl" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/service/ProjectServiceImpl.java" binary="false" 
+    label="projectServiceImpl" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="802" y="0"/>    
+    <execution id="17">      
+      <position height="157" width="204" x="688" y="179"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="150" width="204" x="688" y="574"/>    
+    </execution>  
+  </object>  
+  <object id="25" language="java" name="com.anshul.symantec.symBeta.repository.SymPBProjectRepository" project="symBeta"
+    file="/symBeta/src/main/java/com/symantec/symBeta/repository/SymPBProjectRepository.java" binary="false" 
+    label="symPBProjectRepository" type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="1028" y="0"/>    
+    <execution id="22">      
+      <position height="103" width="246" x="896" y="206"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="96" width="246" x="896" y="601"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="getProjects():org.springframework.http.ResponseEntity&lt;Object&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="7" 
+    operation="saveProject(com.anshul.symantec.symBeta.model.SymPBProject):org.springframework.http.ResponseEntity&lt;Object&gt;"
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="11" operation="getProjects():org.springframework.http.ResponseEntity&lt;Object&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" 
+    operation="saveProject(com.anshul.symantec.symBeta.model.SymPBProject):org.springframework.http.ResponseEntity&lt;Object&gt;"
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="16" operation="getProjects():org.springframework.http.ResponseEntity&lt;Object&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" 
+    operation="saveProject(com.anshul.symantec.symBeta.model.SymPBProject):org.springframework.http.ResponseEntity&lt;Object&gt;"
+    asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="21" operation="findAll():java.util.List&lt;T&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="saveAll(java.lang.Iterable):java.lang.Iterable" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="26" operation="getProjects():org.springframework.http.ResponseEntity&lt;Object&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="27" 
+    operation="saveProject(com.anshul.symantec.symBeta.model.SymPBProject):org.springframework.http.ResponseEntity&lt;Object&gt;"
+    asynchronous="false">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>
+</sequence-diagram>
