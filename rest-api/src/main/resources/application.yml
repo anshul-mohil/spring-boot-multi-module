@@ -17,7 +17,7 @@ spring:
     #    username : some_username
     username: system
     password: enquero
-    driver-class-name: oracle.jdbc.driver.OracleDriver
+    driver-class-name: oracle.jdbc.OracleDriver
     hikaric:
       connection-timeout: 60000
       maximum-pool-size: 5
